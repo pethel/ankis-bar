@@ -1,0 +1,123 @@
+.Menu {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 760px) {
+  .Menu {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.Categories {
+  position: sticky;
+  top: 0;
+  background: #4F6B7F;
+  padding: 1rem;
+  flex-basis: 30%;
+}
+
+.Categories_expand-button {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+}
+
+@media screen and (min-width: 760px) {
+  .Categories_expand-button {
+    display: none;
+  }
+}
+
+.Categories__link,
+.Categories__link:visited {
+  display: inline-block;
+  font-size: 1.75rem;
+  color: #F8F8F8;
+  text-decoration: none;
+}
+
+.Categories__link:hover,
+.Categories__link:focus {
+  text-decoration: underline;
+}
+
+.Categories__link--active {
+  font-weight: bold;
+}
+
+.Categories__list {
+  height: 100%;
+}
+
+.Categories__list .Categories__link {
+  display: none;
+}
+
+.Categories__list .Categories__link--active {
+  display: block;
+}
+
+.Categories__list--expanded .Categories__link {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.MenuTable {
+  flex-basis: 70%;
+  padding: 1rem;
+  background: #FFFFFF;
+  border: 1px solid #9DADB8;
+  margin-bottom: 200px;
+}
+
+@media screen and (min-width: 760px) {
+  .MenuTable {
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.MenuTable h1 {
+  margin-bottom: 1rem;
+}
+
+.MenuTable h1:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.MenuItem {
+  margin-bottom: .5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #9DADB8;
+  flex-basis: 100%;
+}
+
+.MenuItem dl {
+  padding: .5rem;
+}
+
+.MenuItem dd {
+  display: inline-block;
+  margin-right: .35rem;
+  text-transform: lowercase;
+}
+
+.MenuItem dd:first-of-type:first-letter {
+  text-transform: capitalize;
+}
+
+.MenuItem dt {
+  font-weight: bolder;
+  margin-bottom: .5rem;
+}
+
+.MenuItem dd:not(:last-child):after {
+  content: ',';
+}
+
+.MenuTable__list {
+  display: flex;
+  flex-wrap: wrap;
+}
