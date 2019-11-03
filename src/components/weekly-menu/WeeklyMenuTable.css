@@ -1,0 +1,20 @@
+.WeeklyMenuTable {
+  background: #FFFFFF;
+  border: 1px solid #9DADB8;
+  padding: 3rem;
+}
+
+.WeeklyMenuTable p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.WeeklyMenuTable .H1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.WeeklyMenuTable__day {
+  margin-bottom: 50px;
+}
