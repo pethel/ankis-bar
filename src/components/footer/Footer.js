@@ -1,5 +1,6 @@
 import React from 'react';
 import {Trans} from 'react-i18next';
+import {t} from 'i18next';
 
 import './Footer.css';
 import phoneSrc from './phone.svg'
@@ -10,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <a className="Footer__icon" href="tel:+4694210068">
-        <img src={phoneSrc} alt=""/>0942 10068
+        <img src={phoneSrc} alt={t('Footer.phoneAlt')}/>0942 10068
       </a>
       <a
         className="Footer__icon"
@@ -18,7 +19,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={mapsSrc} alt=""/>
+        <img src={mapsSrc} alt={t('Footer.addressAlt')}/>
         <address>
           Storgatan 37<br/>
           Dorotea
@@ -27,10 +28,10 @@ const Footer = () => {
       <div
         className="Footer__icon"
         style={{display: 'flex', alignItems: 'center'}}>
-        <img src={clockSrc} alt=""/>
+        <img src={clockSrc} alt={t('Footer.openingHoursAlt')}/>
         <span>
           <Trans i18nKey="Footer.openingHours">
-            Man-fre: 11:00 - 21:00
+            Man-fre: <time>11:00</time> - <time>21:00</time>
           </Trans>
         </span>
       </div>

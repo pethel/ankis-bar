@@ -16,6 +16,7 @@
   background: #4F6B7F;
   padding: 1rem;
   flex-basis: 30%;
+  min-height: 20px;
 }
 
 .Categories_expand-button {
@@ -83,6 +84,10 @@
 
 .MenuTable h1 {
   margin-bottom: 1rem;
+}
+
+.MenuTable h1:focus {
+  outline: none;
 }
 
 .MenuTable h1:not(:first-child) {
