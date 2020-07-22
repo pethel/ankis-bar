@@ -39,12 +39,14 @@
 }
 
 .Categories__link:hover,
-.Categories__link:focus {
+.Categories__link:focus,
+.Categories__link:active {
   text-decoration: underline;
 }
 
 .Categories__link--active {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .Categories__list {

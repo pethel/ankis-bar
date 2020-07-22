@@ -14,9 +14,9 @@ const App = () => (
     <SkipLink mainId={mainId}/>
     <Header/>
     <BrowserRouter>
-      <main id={mainId} tabIndex="-1">
+      <main>
         <Route exact path="/">
-          <LandingPage/>
+          <LandingPage mainId={mainId}/>
         </Route>
       </main>
     </BrowserRouter>

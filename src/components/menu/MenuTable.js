@@ -10,7 +10,7 @@ const MenuTable = () => {
     <section className="MenuTable">
       {menuCategories.map(category => (
         <Fragment key={category.name}>
-          <Hx id={category.name} level={1} lookLike={2}>{t(category.name)}</Hx>
+          <Hx id={category.name} level={1} lookLike={2} tabIndex="-1">{t(category.name)}</Hx>
           <ul className="MenuTable__list">
             {category.dishes.map(dish => (
               <MenuItem

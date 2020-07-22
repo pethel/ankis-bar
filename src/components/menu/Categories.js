@@ -8,7 +8,6 @@ import menuButtonClose from './menu-button-close.svg';
 import {UnstyledButton} from '../buttons';
 import menuCategories from '../menu-categories';
 import isMobile from '../../isMobile';
-import VisuallyHidden from '../visually-hidden';
 
 const Categories = () => {
 
@@ -36,6 +35,7 @@ const Categories = () => {
         aria-controls="categories-list"
         className="Categories_expand-button"
         onClick={() => setIsExpanded(!isExpanded)}
+        aria-label={isExpanded ? t('Categories.open') : t('Categories.close')}
       >
         <img
           aria-hidden={true}
@@ -43,7 +43,6 @@ const Categories = () => {
           alt=""
           height="30px"
         />
-        <VisuallyHidden>{isExpanded ? t('Categories.open') : t('Categories.close')}</VisuallyHidden>
       </UnstyledButton>
       <ul
         id="categories-list"
@@ -51,7 +50,6 @@ const Categories = () => {
       >
         {menuCategories.map(category => (
           <li key={category.name}>
-
             <Link
               className={classNames(
                 'Categories__link',
