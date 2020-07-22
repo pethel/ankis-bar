@@ -2,8 +2,17 @@
   padding: 1rem;
 }
 
+.Intro p,
+.Intro h1 {
+  text-align: center;
+  outline: none;
+}
+
+.Intro h1 {
+  margin-bottom: 1rem;
+}
+
 .Intro p {
   font-size: 1.25rem;
   line-height: 1.75rem;
-  text-align: center;
 }

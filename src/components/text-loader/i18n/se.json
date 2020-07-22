@@ -3,9 +3,13 @@
     "text": "Hoppa till huvudinnehåll"
   },
   "Footer": {
-    "openingHours": "Mån-Sön: 10:30 - 22:00"
+    "phoneAlt": "Ring oss",
+    "addressAlt": "Besök oss",
+    "openingHoursAlt": "Öppettider",
+    "openingHours": "Mån-Sön: <1>10:30</1> - <3>22:00</3>"
   },
   "Intro": {
+    "heading": "Meny",
     "text": "Vi har ett varierat utbud av mat. Allt från svensk husmanskost till pizza och à la carte.<1/>På vardagar mellan kl 10:30 och 14:00 erbjuder vi dagens rätt, eller lunchpizza till förmånliga priser."
   },
   "Categories": {

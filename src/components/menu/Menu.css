@@ -85,6 +85,10 @@
   margin-bottom: 1rem;
 }
 
+.MenuTable h1:focus {
+  outline: none;
+}
+
 .MenuTable h1:not(:first-child) {
   margin-top: 1rem;
 }

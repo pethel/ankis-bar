@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {t} from 'i18next';
 import classNames from 'classnames';
-import {Link} from 'react-scroll';
+import {Link, Events} from 'react-scroll';
 
 import menuButtonOpen from './menu-button-open.svg';
 import menuButtonClose from './menu-button-close.svg';
@@ -11,7 +11,7 @@ import isMobile from '../../isMobile';
 
 const Categories = () => {
 
-  const [active, setActive] = useState(`#${menuCategories[0].name}`);
+  const [active, setActive] = useState(null);
   const [isExpanded, setIsExpanded] = useState(true);
 
   const handleOnClick = (e) => {
@@ -27,6 +27,13 @@ const Categories = () => {
     }
     return -20;
   };
+
+  useEffect(() => {
+    Events.scrollEvent.register('end', (to, element) => {
+      element.focus();
+    });
+    return () => Events.scrollEvent.remove('end');
+  }, []);
 
   return (
     <nav className="Categories">
