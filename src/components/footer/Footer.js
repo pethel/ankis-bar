@@ -7,10 +7,8 @@ import mapsSrc from './maps.svg'
 import clockSrc from './clock.svg'
 
 const Footer = () => {
-
-
   return (
-    <div className="Footer">
+    <footer className="Footer">
       <a className="Footer__icon" href="tel:+4694210068">
         <img src={phoneSrc} alt="" />0942 10068
       </a>
@@ -36,7 +34,7 @@ const Footer = () => {
           </Trans>
         </span>
       </div>
-    </div>
+    </footer>
   )
 };
 

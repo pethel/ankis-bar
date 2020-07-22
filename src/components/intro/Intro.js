@@ -3,7 +3,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Trans } from 'react-i18next';
 
 import './Intro.css';
-import { WeeklyMenuLink } from '../weekly-menu'
 
 const Intro = () => (
   <Grid className="Intro">
@@ -15,11 +14,6 @@ const Intro = () => (
             På vardagar mellan kl 10:30 och 14:00 erbjuder vi dagens rätt, eller lunchpizza till förmånliga priser.
           </Trans>
         </p>
-      </Col>
-    </Row>
-    <Row center="xs">
-      <Col xs={12}>
-        <p><WeeklyMenuLink>Veckans meny</WeeklyMenuLink></p>
       </Col>
     </Row>
   </Grid>
