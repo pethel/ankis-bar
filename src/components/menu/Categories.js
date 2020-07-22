@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { t } from 'i18next';
+import React, {useState} from 'react';
+import {t} from 'i18next';
 import classNames from 'classnames';
-import { Link } from 'react-scroll';
+import {Link} from 'react-scroll';
 
 import menuButtonOpen from './menu-button-open.svg';
 import menuButtonClose from './menu-button-close.svg';
-import { UnstyledButton } from '../buttons';
+import {UnstyledButton} from '../buttons';
 import menuCategories from '../menu-categories';
 import isMobile from '../../isMobile';
 import VisuallyHidden from '../visually-hidden';
@@ -47,7 +47,7 @@ const Categories = () => {
       </UnstyledButton>
       <ul
         id="categories-list"
-        className={classNames('Categories__list', { 'Categories__list--expanded': isExpanded })}
+        className={classNames('Categories__list', {'Categories__list--expanded': isExpanded})}
       >
         {menuCategories.map(category => (
           <li key={category.name}>
@@ -55,7 +55,7 @@ const Categories = () => {
             <Link
               className={classNames(
                 'Categories__link',
-                { 'Categories__link--active': active === `#${category.name}` }
+                {'Categories__link--active': active === `#${category.name}`}
               )}
               onClick={handleOnClick}
               to={category.name}

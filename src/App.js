@@ -5,12 +5,16 @@ import Header from './components/header'
 import LandingPage from './pages/LandingPage';
 import Footer from './components/footer';
 import TextLoader from './components/text-loader';
+import {SkipLink} from './components/skip-link';
+
+const mainId = 'main'
 
 const App = () => (
   <TextLoader>
+    <SkipLink mainId={mainId}/>
     <Header/>
     <BrowserRouter>
-      <main>
+      <main id={mainId} tabIndex="-1">
         <Route exact path="/">
           <LandingPage/>
         </Route>

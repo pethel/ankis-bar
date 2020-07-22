@@ -1,11 +1,11 @@
 import React from 'react';
-import { oneOf, string } from 'prop-types';
+import {oneOf, string} from 'prop-types';
 
 import './Hx.css';
 
 const headers = ['h1', 'h2', 'h3'];
 
-const Hx = ({ level, lookLike, element: Element, ...rest }) => {
+const Hx = ({level, lookLike, element: Element, ...rest}) => {
   const ElementToRender = Element || headers[level - 1];
   const className = lookLike ? `H${lookLike}` : `H${level}`;
 

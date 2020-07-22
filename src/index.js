@@ -5,9 +5,9 @@ import 'reset-css/reset.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { init } from './components/text-loader';
+import {init} from './components/text-loader';
 
-init().then(() => ReactDOM.render(<App />, document.getElementById('root')))
+init().then(() => ReactDOM.render(<App/>, document.getElementById('root')))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

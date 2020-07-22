@@ -1,7 +1,7 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import {Grid, Row, Col} from 'react-flexbox-grid';
 
-import { Hx } from '../hx';
+import {Hx} from '../hx';
 import './Header.css';
 
 const Header = () => {

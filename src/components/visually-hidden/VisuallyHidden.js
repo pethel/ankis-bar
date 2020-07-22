@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import './VisuallyHidden.css';
 
-const VisuallyHidden = ({ className, element: Element, ...rest }) => (
+const VisuallyHidden = ({className, element: Element, ...rest}) => (
   <Element className={classNames(className, 'VisuallyHidden')} {...rest} />
 );
 

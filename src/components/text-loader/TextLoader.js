@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import i18next from 'i18next';
 
-import { SE } from './languages';
-import defaultNS  from './defaultNS';
+import {SE} from './languages';
+import defaultNS from './defaultNS';
 
-const TextLoader = ({ children, lng }) => {
+const TextLoader = ({children, lng}) => {
 
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    if(!i18next.hasResourceBundle(lng, defaultNS)) {
+    if (!i18next.hasResourceBundle(lng, defaultNS)) {
       setIsLoaded(false);
-      import(`./i18n/${lng}.json`).then(({ default: texts }) => {
+      import(`./i18n/${lng}.json`).then(({default: texts}) => {
         i18next.addResourceBundle(lng, defaultNS, texts, true, true);
         i18next
           .changeLanguage(lng).then(setIsLoaded(true));

@@ -1,0 +1,9 @@
+.SkipLink {
+  color: #ffffff;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.SkipLink:focus {
+  transform: translateY(0%);
+}

@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
-import { t } from 'i18next';
+import React, {Fragment} from 'react';
+import {t} from 'i18next';
 
 import MenuItem from './MenuItem';
-import { Hx } from '../hx';
+import {Hx} from '../hx';
 import menuCategories from '../menu-categories';
 
 const MenuTable = () => {

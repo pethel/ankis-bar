@@ -1,1 +1,1 @@
-export { default } from './menuCategories';
+export {default} from './menuCategories';
