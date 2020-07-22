@@ -100,22 +100,36 @@
   padding: .5rem;
 }
 
-.MenuItem dd {
-  display: inline-block;
-  margin-right: .35rem;
-  text-transform: lowercase;
+.MenuItem__name,
+.MenuItem__price {
+  margin-bottom: .35rem;
 }
 
-.MenuItem dd:first-of-type:first-letter {
+.MenuItem__name,
+.MenuItem__price,
+.MenuItem__ingredient {
+  display: inline-block;
+}
+
+.MenuItem__name {
+  font-weight: bolder;
+  margin-right: .5rem;
+}
+
+.MenuItem__ingredients {
+  width: 100%;
+}
+
+.MenuItem__ingredient {
+  text-transform: lowercase;
+  margin-right: .35rem;
+}
+
+.MenuItem__ingredient:first-of-type:first-letter {
   text-transform: capitalize;
 }
 
-.MenuItem dt {
-  font-weight: bolder;
-  margin-bottom: .5rem;
-}
-
-.MenuItem dd:not(:last-child):after {
+.MenuItem__ingredient:not(:last-child):after {
   content: ',';
 }
 
