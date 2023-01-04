@@ -52,92 +52,92 @@ export default [
     dishes: [
       {
         name: 'dishes.ankisPizza',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Shrimps, Onion]
       },
       {
         name: 'dishes.margherita',
-        price: 75,
+        price: 95,
         ingredients: [TomatoSauce, Cheese]
       },
       {
         name: 'dishes.vezuvio',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham]
       },
       {
         name: 'dishes.capricciosa',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Mushrooms]
       },
       {
         name: 'dishes.hawaii',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Pineapple]
       },
       {
         name: 'dishes.lepini',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Bacon]
       },
       {
         name: 'dishes.fantasi',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Egg]
       },
       {
         name: 'dishes.bolognese',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Bolognese]
       },
       {
         name: 'dishes.venenzia',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Shrimps]
       },
       {
         name: 'dishes.vegetarisk',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Mushrooms, Pineapple, Onion, Paprika, Olives, Artichoke]
       },
       {
         name: 'dishes.portofino',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Tuna, Shrimps]
       },
       {
         name: 'dishes.hockey',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Bolognese, Shrimps]
       },
       {
         name: 'dishes.lagondola',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Bacon, Egg, Onion]
       },
       {
         name: 'dishes.tuttiFrutti',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Pineapple, Banana, Curry]
       },
       {
         name: 'dishes.quattro',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Mushrooms, Shrimps, Asparagus, Clams]
       },
       {
         name: 'dishes.vera',
-        price: 90,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Mushrooms, Shrimps, Paprika]
       },
       {
         name: 'dishes.husetsSpecial',
-        price: 90,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Shrimps, Asparagus, BlackCaviar]
       },
       {
         name: 'dishes.mammaMia',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Salami, Mushrooms, Olives]
       },
       {
@@ -147,22 +147,22 @@ export default [
       },
       {
         name: 'dishes.hotPepper',
-        price: 90,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Salami, Onion, Peperoni, HotPepper]
       },
       {
         name: 'dishes.bastia',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Bacon, Mushrooms, Onion, Artichoke]
       },
       {
         name: 'dishes.kebabPizza',
-        price: 99,
+        price: 120,
         ingredients: [TomatoSauce, Cheese, Kebab, Onion, Peperoni, BearniseSauce]
       },
       {
         name: 'dishes.filePizza',
-        price: 99,
+        price: 135,
         ingredients: [TomatoSauce, Cheese, FilletOfBeef, TomatoSlices, Onion, BearniseSauce]
       },
     ]
@@ -172,22 +172,22 @@ export default [
     dishes: [
       {
         name: 'dishes.calzone',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham]
       },
       {
         name: 'dishes.calzoneCapri',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Mushrooms]
       },
       {
         name: 'dishes.calzoneVerona',
-        price: 90,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Pineapple, Shrimps]
       },
       {
         name: 'dishes.calzoneSpecial',
-        price: 90,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Ham, Mushrooms, Shrimps]
       }
     ]
@@ -197,12 +197,12 @@ export default [
     dishes: [
       {
         name: 'dishes.veronaForTva',
-        price: 170,
+        price: 180,
         ingredients: [TomatoSauce, Cheese, Ham, Pineapple, Shrimps]
       },
       {
         name: 'dishes.specialForTva',
-        price: 170,
+        price: 180,
         ingredients: [TomatoSauce, Cheese, Ham, Mushrooms, Shrimps]
       },
     ]
@@ -212,17 +212,17 @@ export default [
     dishes: [
       {
         name: 'dishes.skinkSallad',
-        price: 90,
+        price: 105,
         ingredients: [Ham, IcebergLettuce, TomatoSlices, Cucumber, Cheese, Bread, Dressing]
       },
       {
         name: 'dishes.rakSallad',
-        price: 99,
+        price: 125,
         ingredients: [Shrimps, IcebergLettuce, TomatoSlices, Cucumber, Cheese, Bread, Dressing]
       },
       {
         name: 'dishes.tonfiskSallad',
-        price: 99,
+        price: 115,
         ingredients: [Tuna, IcebergLettuce, TomatoSlices, Cucumber, Cheese, Bread, Dressing]
       }
     ]
@@ -232,67 +232,67 @@ export default [
     dishes: [
       {
         name: 'dishes.vasterbottenSchnitzel',
-        price: 149,
+        price: 165,
         ingredients: [VasterbottenSchnitzel, FriedPotatoes, ParsleyButter]
       },
       {
         name: 'dishes.kalvschnitzel',
-        price: 145,
+        price: 155,
         ingredients: [Kalvschnitzel, FriedPotatoes, ParsleyButter]
       },
       {
         name: 'dishes.oxfile',
-        price: 199,
+        price: 215,
         ingredients: [FilletOfBeef, FrenchFries, BearniseSauce]
       },
       {
         name: 'dishes.entrecote',
-        price: 180,
+        price: 190,
         ingredients: [Entrecote, FrenchFries, BearniseSauce]
       },
       {
         name: 'dishes.lovbiff',
-        price: 145,
+        price: 180,
         ingredients: [Lovbiff, FrenchFries, ParsleyButter]
       },
       {
         name: 'dishes.gronpepparbiff',
-        price: 95,
+        price: 110,
         ingredients: [Gronpepparbiff, FriedPotatoes, GreenPepperSauce]
       },
       {
         name: 'dishes.kebabrulle',
-        price: 99,
+        price: 115,
         ingredients: [PizzaBottom, TomatoSauce, Cheese, Kebab, IcebergLettuce, TomatoSlices, Cucumber, Onion, Peperoni, Dressing]
       },
       {
         name: 'dishes.kebabtallrik',
-        price: 99,
+        price: 115,
         ingredients: [Kebab, FrenchFries, IcebergLettuce, TomatoSlices, Cucumber, Onion, Peperoni, Dressing]
       },
       {
         name: 'dishes.skrovmal90',
-        price: 85,
+        price: 105,
         ingredients: [Hamburger, FrenchFries]
       },
       {
         name: 'dishes.skrovmal150',
-        price: 95,
+        price: 110,
         ingredients: [Hamburger, FrenchFries]
       },
       {
         name: 'dishes.bracktSkinka',
-        price: 90,
+        price: 105,
         ingredients: [BracktSkinka, FriedPotatoes, FriedEgg]
       },
       {
         name: 'dishes.bracktBacon',
-        price: 90,
+        price: 105,
         ingredients: [BracktBacon, FriedPotatoes, FriedEgg]
       },
       {
         name: 'dishes.pyttIPanna',
-        price: 85,
+        price: 105,
         ingredients: [PyttIPanna, FriedEgg]
       }
     ]
