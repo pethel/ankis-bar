@@ -142,7 +142,7 @@ export default [
       },
       {
         name: 'dishes.panza',
-        price: 85,
+        price: 105,
         ingredients: [TomatoSauce, Cheese, Mushrooms, Shrimps]
       },
       {
