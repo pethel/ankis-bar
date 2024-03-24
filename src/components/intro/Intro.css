@@ -1,22 +1,23 @@
 .Intro {
   padding: 1rem;
   --font-size: 1rem;
+  --heading-margin-bottom: .5rem;
   font-size: var(--font-size);
   line-height: 1.4;
 }
 
-.Intro p,
-.Intro h1 {
+.Intro :where(h1, p) {
   text-align: center;
   outline: none;
 }
 
 .Intro h1 {
-  margin-bottom: 1rem;
+  margin-bottom: var(--heading-margin-bottom);
 }
 
 @media screen and (min-width: 760px) {
   .Intro {
     --font-size: 1.25rem;
+    --heading-margin-bottom: 1rem;
   }
 }
