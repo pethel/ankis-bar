@@ -29,9 +29,12 @@ const Footer = () => {
         className="Footer__icon"
         style={{display: 'flex', alignItems: 'center'}}>
         <img src={clockSrc} alt={t('Footer.openingHoursAlt')}/>
-        <span>
+        <span className="Footer__openingHours">
           <Trans i18nKey="Footer.openingHours">
-            Man-fre: <time>11:00</time> - <time>21:00</time>
+            <span>Man-søn:</span>
+            <span>
+                 <time>11:00</time>-<time>21:00</time>
+            </span>
           </Trans>
         </span>
       </div>

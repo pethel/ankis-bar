@@ -1,22 +1,19 @@
 .Footer {
+  --icon-size: 1.2rem;
+  --font-size: .8rem;
+  --gap: .8rem;
   background: #353535;
-  position: fixed;
   bottom: 0;
-  width: 100%;
   color: #FFFFFF;
   display: flex;
+  column-gap: var(--gap);
+  row-gap: 0.5rem;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1rem;
-}
-
-@media screen and (min-width: 760px) {
-  .Footer {
-    left: 50%;
-    max-width: 700px;
-    margin-left: -250px; /* Negative half of width. */
-  }
+  font-size: var(--font-size);
+  position: sticky;
 }
 
 .Footer a {
@@ -24,32 +21,31 @@
   align-items: center;
 }
 
-.Footer a,
-.Footer a:visited {
-  font-size: 1rem;
+.Footer :is(a, a:visited) {
   color: #F8F8F8;
   text-decoration: none;
 }
 
-.Footer a:focus,
-.Footer a:hover {
+.Footer :is(:focus, :hover) {
   text-decoration: underline;
 }
 
 .Footer img {
-  height: 2rem;
-  width: 2rem;
+  width: var(--icon-size);
+  aspect-ratio: 1;
   margin-right: .5rem;
 }
 
-.Footer__icon {
-  flex-basis: 100%;
-  margin-bottom: 0.5rem;
+@media screen and (min-width: 760px) {
+  .Footer {
+    --font-size: 1rem;
+    --icon-size: 2rem;
+    --gap: 2rem;
+  }
 }
 
-@media screen and (min-width: 760px) {
-  .Footer__icon {
-    flex-basis: auto;
-    margin-bottom: 0;
-  }
+.Footer__openingHours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
 }
