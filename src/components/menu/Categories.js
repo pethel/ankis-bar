@@ -1,63 +1,58 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useRef } from 'react';
 import {t} from 'i18next';
 import classNames from 'classnames';
-import {Link, Events} from 'react-scroll';
-
 import menuButtonOpen from './menu-button-open.svg';
 import menuButtonClose from './menu-button-close.svg';
 import {UnstyledButton} from '../buttons';
 import menuCategories from '../menu-categories';
 import isMobile from '../../isMobile';
 
-const Categories = () => {
+const Categories = ({ categoryNameElement }) => {
 
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState();
   const [isExpanded, setIsExpanded] = useState(true);
+  const ulRef = useRef()
 
-  const handleOnClick = (e) => {
-    setActive(e.target.getAttribute('href'));
-    if (isMobile()) {
+  const handleOnClick = (categoryName) => {
+
+    if( isMobile()) {
       setIsExpanded(false);
     }
-  };
+    setActive(categoryName)
+    const { top: topCategory, height: heightCategory } = categoryNameElement(categoryName).getBoundingClientRect()
+    const { height: heightUl } = isMobile() ? ulRef.current.getBoundingClientRect() : { height: 0 }
 
-  const getOffSet = () => {
-    if (isMobile()) {
-      return isExpanded ? -250 : -100;
-    }
-    return -20;
-  };
+    const OFFSET = 10;
 
-  useEffect(() => {
-    Events.scrollEvent.register('end', (to, element) => {
-      element.focus();
-    });
-    return () => Events.scrollEvent.remove('end');
-  }, []);
+    window.scrollTo({
+      top: topCategory + window.scrollY - heightUl - heightCategory -OFFSET,
+      left: 0,
+      behavior: 'smooth'
+    })
+  };
 
   return (
     <nav className="Categories">
-
       <ul
         id="categories-list"
         className={classNames('Categories__list', {'Categories__list--expanded': isExpanded})}
+        ref={ulRef}
       >
         {menuCategories.map(category => (
           <li key={category.name}>
-            <Link
+            <a
               className={classNames(
                 'Categories__link',
-                {'Categories__link--active': active === `#${category.name}`}
+                {'Categories__link--active': active === category.name}
               )}
-              onClick={handleOnClick}
-              to={category.name}
-              smooth={true}
-              duration={500}
+              onClick={(e) => {
+                e.preventDefault()
+                handleOnClick(category.name)
+              }}
               href={`#${category.name}`}
-              offset={getOffSet()}
             >
               {t(category.name)}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
