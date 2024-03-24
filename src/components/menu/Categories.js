@@ -37,20 +37,7 @@ const Categories = () => {
 
   return (
     <nav className="Categories">
-      <UnstyledButton
-        type="button"
-        aria-controls="categories-list"
-        className="Categories_expand-button"
-        onClick={() => setIsExpanded(!isExpanded)}
-        aria-label={isExpanded ? t('Categories.open') : t('Categories.close')}
-      >
-        <img
-          aria-hidden={true}
-          src={isExpanded ? menuButtonClose : menuButtonOpen}
-          alt=""
-          height="30px"
-        />
-      </UnstyledButton>
+
       <ul
         id="categories-list"
         className={classNames('Categories__list', {'Categories__list--expanded': isExpanded})}
@@ -74,6 +61,20 @@ const Categories = () => {
           </li>
         ))}
       </ul>
+      <UnstyledButton
+        type="button"
+        aria-controls="categories-list"
+        className="Categories_expand-button"
+        onClick={() => setIsExpanded(!isExpanded)}
+        aria-label={isExpanded ? t('Categories.open') : t('Categories.close')}
+      >
+        <img
+          aria-hidden={true}
+          src={isExpanded ? menuButtonClose : menuButtonOpen}
+          alt=""
+          height="30px"
+        />
+      </UnstyledButton>
     </nav>
   );
 };

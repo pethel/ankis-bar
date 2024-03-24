@@ -11,21 +11,28 @@
 }
 
 .Categories {
+  --font-size: 1.2rem;
+  --padding: 0.6rem;
   position: sticky;
   top: 0;
   background: #4F6B7F;
-  padding: 1rem;
+  padding: var(--padding);
   flex-basis: 30%;
-  min-height: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: var(--font-size);
 }
 
 .Categories_expand-button {
-  position: absolute;
-  top: .75rem;
-  right: .75rem;
+  align-self: start;
 }
 
 @media screen and (min-width: 760px) {
+  .Categories {
+    --padding: 1rem;
+    --font-size: 1.5rem;
+  }
+
   .Categories_expand-button {
     display: none;
   }
@@ -34,14 +41,11 @@
 .Categories__link,
 .Categories__link:visited {
   display: inline-block;
-  font-size: 1.75rem;
   color: #F8F8F8;
   text-decoration: none;
 }
 
-.Categories__link:hover,
-.Categories__link:focus,
-.Categories__link:active {
+.Categories__link:is(:hover, :focus,:active) {
   text-decoration: underline;
 }
 
@@ -52,6 +56,8 @@
 
 .Categories__list {
   height: 100%;
+  display: grid;
+  align-items: center;
 }
 
 .Categories__list .Categories__link {
