@@ -88,6 +88,7 @@
 
 .MenuTable h1 {
   margin-bottom: var(--heading-margin-bottom);
+  text-decoration: underline;
 }
 
 .MenuTable h1:focus {
