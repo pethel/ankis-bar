@@ -10,7 +10,7 @@ import isMobile from '../../isMobile';
 const Categories = ({ categoryNameElement }) => {
 
   const [active, setActive] = useState();
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(!isMobile());
   const ulRef = useRef()
 
   const handleOnClick = (categoryName) => {
@@ -39,12 +39,12 @@ const Categories = ({ categoryNameElement }) => {
         ref={ulRef}
       >
         {menuCategories.map(category => (
-          <li key={category.name}>
-            <a
+          <li key={category.name}
               className={classNames(
                 'Categories__link',
                 {'Categories__link--active': active === category.name}
-              )}
+              )}>
+            <a
               onClick={(e) => {
                 e.preventDefault()
                 handleOnClick(category.name)
