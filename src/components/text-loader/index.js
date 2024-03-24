@@ -1,2 +1,2 @@
-export {default} from './TextLoader';
-export {default as init} from './init';
+export { default } from "./TextLoader";
+export { default as init } from "./init";

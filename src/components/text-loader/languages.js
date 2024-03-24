@@ -1,1 +1,1 @@
-export const SE = 'se';
+export const SE = "se";

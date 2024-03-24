@@ -10,7 +10,6 @@
   font-size: 1rem;
 }
 
-
 @media screen and (min-width: 760px) {
   .H1 {
     font-size: 2rem;
@@ -23,5 +22,4 @@
   .H3 {
     font-size: 1.25rem;
   }
-
 }

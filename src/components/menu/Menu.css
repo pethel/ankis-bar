@@ -16,7 +16,7 @@
   --padding-x: 0.4rem;
   position: sticky;
   top: 0;
-  background: #4F6B7F;
+  background: #4f6b7f;
   padding: var(--padding-y) var(--padding-x);
   flex-basis: 30%;
   display: grid;
@@ -46,11 +46,11 @@
 
 .Categories__link :is(a, a:visited) {
   display: inline-block;
-  color: #F8F8F8;
+  color: #f8f8f8;
   text-decoration: none;
 }
 
-.Categories__link a:is(:hover, :focus,:active) {
+.Categories__link a:is(:hover, :focus, :active) {
   text-decoration: underline;
 }
 
@@ -74,14 +74,14 @@
 
 .Categories__list--expanded .Categories__link {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .MenuTable {
   flex-basis: 70%;
   padding: 1rem;
-  background: #FFFFFF;
-  border: 1px solid #9DADB8;
+  background: #ffffff;
+  border: 1px solid #9dadb8;
   margin-bottom: 200px;
   --heading-margin-bottom: 0;
 }
@@ -100,19 +100,19 @@
 }
 
 .MenuItem {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #9DADB8;
+  border-bottom: 1px solid #9dadb8;
   flex-basis: 100%;
 }
 
 .MenuItem dl {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .MenuItem__name,
 .MenuItem__price {
-  margin-bottom: .35rem;
+  margin-bottom: 0.35rem;
 }
 
 .MenuItem__name,
@@ -123,7 +123,7 @@
 
 .MenuItem__name {
   font-weight: bolder;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .MenuItem__ingredients {
@@ -132,7 +132,7 @@
 
 .MenuItem__ingredient {
   text-transform: lowercase;
-  margin-right: .35rem;
+  margin-right: 0.35rem;
 }
 
 .MenuItem__ingredient:first-of-type:first-letter {
@@ -140,7 +140,7 @@
 }
 
 .MenuItem__ingredient:not(:last-child):after {
-  content: ',';
+  content: ",";
 }
 
 .MenuTable__list {
@@ -152,6 +152,6 @@
   .MenuTable {
     margin-left: 1rem;
     margin-bottom: 0;
-    --heading-margin-bottom: .2rem;
+    --heading-margin-bottom: 0.2rem;
   }
 }

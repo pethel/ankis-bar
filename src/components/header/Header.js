@@ -1,8 +1,8 @@
-import React from 'react';
-import {Grid, Row, Col} from 'react-flexbox-grid';
+import React from "react";
+import { Grid, Row, Col } from "react-flexbox-grid";
 
-import {Hx} from '../hx';
-import './Header.css';
+import { Hx } from "../hx";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         </Row>
       </Grid>
     </header>
-  )
+  );
 };
 
 export default Header;

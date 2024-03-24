@@ -1,1 +1,1 @@
-export {default as Hx} from './Hx';
+export { default as Hx } from "./Hx";
