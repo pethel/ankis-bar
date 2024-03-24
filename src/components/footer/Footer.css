@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 
-.Footer :is(:focus, :hover) {
+.Footer a:is(:focus, :hover) {
   text-decoration: underline;
 }
 
