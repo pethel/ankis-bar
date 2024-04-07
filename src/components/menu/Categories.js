@@ -23,10 +23,8 @@ const Categories = ({ categoryNameElement }) => {
       ? ulRef.current.getBoundingClientRect()
       : { height: 0 };
 
-    const OFFSET = 10;
-
     window.scrollTo({
-      top: topCategory + window.scrollY - heightUl - heightCategory - OFFSET,
+      top: topCategory + window.scrollY - heightUl - heightCategory,
       left: 0,
       behavior: "smooth",
     });
