@@ -96,7 +96,7 @@ const App: React.FC = () => {
         <dl className="max-w-[1280px] grid grid-cols-3 gap-2 md:gap-7 mx-auto justify-center items-center w-full px-2 pb-4 pt-3">
           <dt className="sr-only">Öppettider</dt>
           <dd>
-            <div className="flex gap-1 font-inter text-sm md:text-md text-white items-center">
+            <div className="flex gap-1 font-inter text-sm lg:text-md text-white items-center justify-center">
               <svg
                 aria-hidden={true}
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,14 +107,14 @@ const App: React.FC = () => {
               >
                 <path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
               </svg>
-              Mån-Sön: <wbr />
+              Mån-Sön: <br className="md:hidden" />
               10:30 - 22:00
             </div>
           </dd>
           <dt className="sr-only">Adress</dt>
           <dd>
             <a
-              className="flex gap-1 font-inter hover:underline text-sm md:text-md text-white items-center"
+              className="flex gap-1 font-inter hover:underline text-sm lg:text-md text-white items-center justify-center"
               href="https://goo.gl/maps/eCcnyQVjPtAxhits6"
             >
               <svg
@@ -128,7 +128,8 @@ const App: React.FC = () => {
                 <path d="M480-301q99-80 149.5-154T680-594q0-90-56-148t-144-58q-88 0-144 58t-56 148q0 65 50.5 139T480-301Zm0 101Q339-304 269.5-402T200-594q0-125 78-205.5T480-880q124 0 202 80.5T760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520ZM200-80v-80h560v80H200Zm280-520Z" />
               </svg>
               <address className="not-italic">
-                Storgatan 37 <wbr />
+                Storgatan 37
+                <br className="md:hidden" />
                 Dorotea
               </address>
             </a>
@@ -137,7 +138,7 @@ const App: React.FC = () => {
           <dt className="sr-only">Telefon</dt>
           <dd>
             <a
-              className="flex gap-1 font-inter hover:underline text-sm md:text-md text-white items-center"
+              className="flex gap-1 font-inter hover:underline text-sm lg:text-md text-white items-center justify-center"
               href="tel:+4694210068"
             >
               <svg
