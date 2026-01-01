@@ -6,52 +6,52 @@ export const meny: { [K in Tab]: FoodCategory } = {
     dishes: [
       {
         name: "Anki's Pizza",
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'räkor', 'lök'],
       },
       {
         name: 'Margherita',
-        price: 110,
+        price: 120,
         ingredients: ['tomatsås', 'ost'],
       },
       {
         name: 'Vesuvio',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka'],
       },
       {
         name: 'Capricciosa',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'champinjoner'],
       },
       {
         name: 'Hawaii',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'ananas'],
       },
       {
         name: 'Lepini',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'bacon'],
       },
       {
         name: 'Fantasi',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'ägg'],
       },
       {
         name: 'Bolognese',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'köttfärssås'],
       },
       {
         name: 'Venezia',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'räkor'],
       },
       {
         name: 'Vegetarisk',
-        price: 115,
+        price: 125,
         ingredients: [
           'tomatsås',
           'ost',
@@ -65,27 +65,27 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Portofino',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'tonfisk', 'räkor'],
       },
       {
         name: 'Hockey',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'köttfärssås', 'räkor'],
       },
       {
         name: 'Lagondola',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'bacon', 'ägg', 'lök'],
       },
       {
         name: 'Tutti Frutti',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'ananas', 'banan', 'curry'],
       },
       {
         name: 'Quattro',
-        price: 115,
+        price: 125,
         ingredients: [
           'tomatsås',
           'ost',
@@ -98,7 +98,7 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Vera',
-        price: 125,
+        price: 135,
         ingredients: [
           'tomatsås',
           'ost',
@@ -110,22 +110,22 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Husets Special',
-        price: 125,
+        price: 135,
         ingredients: ['tomatsås', 'ost', 'räkor', 'sparris', 'svart kaviar'],
       },
       {
         name: 'Mamma Mia',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'salami', 'champinjoner', 'oliver'],
       },
       {
         name: 'Panza',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'champinjoner', 'räkor'],
       },
       {
         name: 'Hot Pepper',
-        price: 125,
+        price: 135,
         ingredients: [
           'tomatsås',
           'ost',
@@ -138,7 +138,7 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Bastia',
-        price: 115,
+        price: 125,
         ingredients: [
           'tomatsås',
           'ost',
@@ -180,22 +180,22 @@ export const meny: { [K in Tab]: FoodCategory } = {
     dishes: [
       {
         name: 'Calzone',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka'],
       },
       {
         name: 'Calzone Capri',
-        price: 115,
+        price: 125,
         ingredients: ['tomatsås', 'ost', 'skinka', 'champinjoner'],
       },
       {
         name: 'Calzone Verona',
-        price: 125,
+        price: 135,
         ingredients: ['tomatsås', 'ost', 'skinka', 'ananas', 'räkor'],
       },
       {
         name: 'Calzone Special',
-        price: 125,
+        price: 135,
         ingredients: ['tomatsås', 'ost', 'skinka', 'champinjoner', 'räkor'],
       },
     ],
@@ -205,12 +205,12 @@ export const meny: { [K in Tab]: FoodCategory } = {
     dishes: [
       {
         name: 'Verona för två',
-        price: 210,
+        price: 220,
         ingredients: ['tomatsås', 'ost', 'skinka', 'ananas', 'räkor'],
       },
       {
         name: 'Special för två',
-        price: 210,
+        price: 220,
         ingredients: ['tomatsås', 'ost', 'skinka', 'champinjoner', 'räkor'],
       },
     ],
@@ -220,7 +220,7 @@ export const meny: { [K in Tab]: FoodCategory } = {
     dishes: [
       {
         name: 'Skinksallad',
-        price: 120,
+        price: 130,
         ingredients: [
           'skinka',
           'isbergssallad',
@@ -233,7 +233,7 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Räksallad',
-        price: 140,
+        price: 150,
         ingredients: [
           'räkor',
           'isbergssallad',
@@ -246,7 +246,7 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Tonfisksallad',
-        price: 130,
+        price: 140,
         ingredients: [
           'tonfisk',
           'isbergssallad',
@@ -264,7 +264,7 @@ export const meny: { [K in Tab]: FoodCategory } = {
     dishes: [
       {
         name: 'Västerbottenschnitzel',
-        price: 199,
+        price: 209,
         ingredients: [
           'fläskschnitzel fylld med Västerbottensost',
           'stekt potatis',
@@ -273,22 +273,22 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Kalvschnitzel',
-        price: 199,
+        price: 209,
         ingredients: ['kalvschnitzel', 'stekt potatis', 'persiljesmör'],
       },
       {
         name: 'Oxfilé',
-        price: 299,
+        price: 309,
         ingredients: ['oxfilé', 'pommes frites', 'bearnaisesås'],
       },
       {
         name: 'Entrecôte',
-        price: 280,
+        price: 290,
         ingredients: ['entrecôte', 'pommes frites', 'bearnaisesås'],
       },
       {
         name: 'Lövbiff',
-        price: 190,
+        price: 200,
         ingredients: [
           'lövbiff gjord på oxfilé',
           'pommes frites',
@@ -297,12 +297,12 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Grönpepparbiff',
-        price: 130,
+        price: 140,
         ingredients: ['färsbiff', 'stekt potatis', 'grönpepparsås'],
       },
       {
         name: 'Kebabrulle',
-        price: 125,
+        price: 135,
         ingredients: [
           'pizzabotten',
           'tomatsås',
@@ -318,7 +318,7 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Kebabtallrik',
-        price: 135,
+        price: 145,
         ingredients: [
           'kebab',
           'pommes frites',
@@ -332,27 +332,27 @@ export const meny: { [K in Tab]: FoodCategory } = {
       },
       {
         name: 'Skrovmål 90g',
-        price: 115,
-        ingredients: ['hamburgare', 'pommes frites'],
-      },
-      {
-        name: 'Skrovmål 150g',
         price: 125,
         ingredients: ['hamburgare', 'pommes frites'],
       },
       {
+        name: 'Skrovmål 150g',
+        price: 135,
+        ingredients: ['hamburgare', 'pommes frites'],
+      },
+      {
         name: 'Bräckt skinka',
-        price: 120,
+        price: 130,
         ingredients: ['bräckt skinka', 'stekt potatis', 'stekt ägg'],
       },
       {
         name: 'Bräckt bacon',
-        price: 120,
+        price: 130,
         ingredients: ['bräckt bacon', 'stekt potatis', 'stekt ägg'],
       },
       {
         name: 'Pytt i panna',
-        price: 115,
+        price: 125,
         ingredients: ['pytt i panna', 'stekt ägg'],
       },
     ],
