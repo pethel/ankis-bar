@@ -7,7 +7,7 @@ export const meny: { [K in Tab]: FoodCategory } = {
       {
         name: "Anki's Pizza",
         price: 125,
-        ingredients: ['tomatsås', 'ost', 'skinka', 'räkor', 'lök'],
+        ingredients: ['tomatsås', 'ost', 'skinka', 'tonfisk', 'räkor', 'lök'],
       },
       {
         name: 'Margherita',
